@@ -7,5 +7,6 @@ using namespace std;
 
 void fillMat(vector<vector<float>> &mat, int r, int c);
 void printMat(vector<vector<float>> &mat, int r, int c);
-
+vector<float> flattenMat(vector<vector<float>> &mat, int r, int c);
+void fillVecMat(vector<float> &mat, int r, int c);
 #endif
