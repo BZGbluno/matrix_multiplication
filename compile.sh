@@ -8,7 +8,7 @@
 # cmake -S . -B build-O2 -DCMAKE_BUILD_TYPE=Release \
 #   -DCMAKE_CXX_FLAGS_RELEASE="-O2 -DNDEBUG"
 
-O3 optimization
+# O3 optimization
 cmake -S . -B build-O0 -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_CXX_FLAGS_RELEASE="-O3 -DNDEBUG"
 cmake -S . -B build-no-O0 \

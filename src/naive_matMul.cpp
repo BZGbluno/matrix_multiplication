@@ -2,12 +2,18 @@
 using namespace std;
 /*
 System: 
-Avg Execution time: 0.0277771seconds
-Cache Misses: 269,838,197
-Cache References: 1,834,681,480 
-IPC: 2.53
-Cache Miss Rate: 14.71%
-Instructions: 8,641,081,341
+Avg Execution time (wall time): 0.0275525seconds
+     3,391,855,595      cycles                                                                  ( +-  0.03% )  (45.35%)
+     8,665,555,633      instructions                     #    2.55  insn per cycle              ( +-  0.03% )  (45.49%)
+     3,239,453,597      L1-dcache-loads                                                         ( +-  0.03% )  (45.60%)
+     1,556,872,556      L1-dcache-load-misses            #   48.06% of all L1-dcache accesses   ( +-  0.03% )  (45.60%)
+     1,552,458,529      l2_cache_accesses_from_dc_misses                                        ( +-  0.03% )  (45.61%)
+     1,513,746,967      l2_cache_hits_from_dc_misses                                            ( +-  0.05% )  (45.59%)
+        32,256,903      l2_cache_misses_from_dc_misses                                          ( +-  0.12% )  (45.45%)
+     1,090,365,187      dTLB-loads                                                              ( +-  0.04% )  (45.33%)
+            23,543      dTLB-load-misses                 #    0.00% of all dTLB cache accesses  ( +-  5.24% )  (45.33%)
+       266,476,393      cache-misses                     #   14.46% of all cache refs           ( +-  0.07% )  (45.33%)
+     1,842,301,867      cache-references                                                        ( +-  0.03% )  (45.32%)
 */
 void naiveMatMul(const vector<vector<float>> &matA, const vector<vector<float>> &matB, vector<vector<float>> &matC) {
 
